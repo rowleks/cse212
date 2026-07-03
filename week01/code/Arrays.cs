@@ -13,10 +13,10 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        // Steps to answer
-        // 1. Create an empty multiples array of capacity equal to the length parameter
-        // 2. Create a loop that goes from 0 up to length-1 and multiplies (i+1) by the number parameter then modify multiples[i] to equal the product.
-        // 3. Return the multiples array.
+        /*  Steps to answer
+         1. Create an empty multiples array of capacity equal to the length parameter
+         2. Create a loop that goes from 0 up to length-1 and multiplies (i+1) by the number parameter then modify multiples[i] to equal the product.
+         3. Return the multiples array. */
 
         double[] multiples = new double[length];
 
@@ -42,5 +42,17 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+
+        /* Steps to answer
+         1.Get the range of data to move right with the GetRange function
+         2.Delete that range from the list
+         3.Add the range to range of data to move to the right with the AddRange Method. */
+
+        var rangeToMove = data.GetRange(0, data.Count - amount);
+
+        data.RemoveRange(0, data.Count - amount);
+
+        data.AddRange(rangeToMove);
+
     }
 }
