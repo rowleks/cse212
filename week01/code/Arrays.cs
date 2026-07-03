@@ -13,7 +13,20 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        // Steps to answer
+        // 1. Create an empty multiples array of capacity equal to the length parameter
+        // 2. Create a loop that goes from 0 up to length-1 and multiplies (i+1) by the number parameter then modify multiples[i] to equal the product.
+        // 3. Return the multiples array.
+
+        double[] multiples = new double[length];
+
+        for (int i = 0; i < length; i++)
+        {
+
+            multiples[i] = (i + 1) * number;
+
+        }
+        return multiples;
     }
 
     /// <summary>
